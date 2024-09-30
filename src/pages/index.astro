@@ -4,12 +4,100 @@ import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
+
+const schemamarkup{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Hvornår og hvordan opstod punk rock?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Punk rock opstod i midten af 1970'erne, mellem 1975 og 1980. Det var en musikalsk bevægelse, der blev kendetegnet ved radikale politiske holdninger, simpel energi, og en fjendtlig facade. Punkmusik var mere end blot musik – det var en kulturel bevægelse, der repræsenterede en afvisning af det etablerede samfund og en stærk følelse af rebelskhed og anarki."
+    }
+  },{
+    "@type": "Question",
+    "name": "Hvad gjorde punk til mere end bare musik?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Punk handlede ikke kun om lyden, men også om ideologi og æstetik. Det var en livsstil og en kulturel udtryksform, der gik ud over musik og udtrykte en stærk afvisning af konformitet. Punkere så sig selv som modkulturelle rebeller, og punkens budskaber gik ofte på tværs af samfundets normer og forventninger."
+    }
+  },{
+    "@type": "Question",
+    "name": "Hvilken rolle spillede punkens fjendtlige facade?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Den fjendtlige facade, som punkbandene og deres fans udstrålede, var en essentiel del af deres oprør. Musikernes og tilhængernes udseende var ofte provokerende og konfronterende, hvilket understregede deres position som outsidere og deres fjendtlighed mod mainstreamkulturen. Den visuelle stil blev en del af punkens oprørske identitet."
+    }
+  },{
+    "@type": "Question",
+    "name": "Hvem var pionererne inden for punk rock i USA?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "I USA var bands som Iggy and the Stooges, MC5, og New York Dolls nogle af de første til at definere punkens lyd og attitude. Disse bands introducerede en rå, energisk lyd, der modsatte sig etablerede normer, hvilket banede vejen for punkens udvikling i Amerika."
+    }
+  },{
+    "@type": "Question",
+    "name": "Hvordan satte The Ramones standarden for punk rock?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The Ramones betragtes som den \"blåtryk\" for punkrockens lyd og stil. Med deres hurtige, korte sange og minimalistiske musikstil skabte de et fundament, som mange punkbands senere fulgte. Deres ikoniske udseende og simple, men kraftfulde tilgang gjorde dem til pionerer inden for punkbevægelsen."
+    }
+  },{
+    "@type": "Question",
+    "name": "Hvad bidrog Sex Pistols med til punkens udvikling i Storbritannien?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "I Storbritannien tog Sex Pistols punk til et nyt niveau. De etablerede ikke kun punk som en musikstil, men skabte også en hel subkultur. Med deres vilde musik og provokerende tøjstil hjalp de med at forme punk som et globalt fænomen og gjorde punk til en kulturel bevægelse, der både omfattede musik og livsstil."
+    }
+  },{
+    "@type": "Question",
+    "name": "Hvordan kritiserede punk samfundet og musikindustrien?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Punkmusikere var kendt for deres socialt bevidste tekster, der ofte rettede skarp kritik mod samfundets magtstrukturer og musikindustrien. De satte spørgsmålstegn ved konventionerne, afviste kommerciel succes som mål, og deres sange handlede ofte om social uretfærdighed, fremmedgørelse og modstand mod autoriteter."
+    }
+  },{
+    "@type": "Question",
+    "name": "Hvordan påvirkede disco punkens nedgang, og hvordan ses punk i dag?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "I slutningen af 1970'erne begyndte punk at miste sit momentum, efterhånden som discoens mere kommercielle og festorienterede musik overtog mainstreamscenen. Punkens rå og aggressive udtryk stod i kontrast til discoens glamour, og derfor gled punk ud af populærkulturen. I dag, i 2024, ses punk som en vigtig kulturel milepæl, der fortsat inspirerer moderne musik og subkulturer. Punkens DIY-mentalitet og anti-establishment-holdninger lever videre i både mode og musik, selvom den ikke længere er en dominerende mainstreamkraft."
+    }
+  }]
+}
 ---
-<MainLayout title="Titel">
+<MainLayout title="Punk historie - fra 1975 til 2024"
+description="Historien af punk fra dens oprør i 1970'erne til dens fald i takt med discoens fremkomst. Læs om punkens kulturelle betydning..."
+ogtitle="Punks historie"
+ogdescription="Fra oprør til fald">
+	<article class="grid mx-auto container gap-8 pt-8 prose">
 	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
+		<h1><strong>Fra Opr&oslash;r til Arv: Punk'ens Opblomstring, Fald og Dens Betydning i 2024</strong></h1>
+		<h3><strong>Punkens Begyndelse (1975-80)</strong></h3>
+		<p><span style="font-weight: 400;">Punk rock opstod i midten af 1970'erne og udviklede sig som en musikalsk bev&aelig;gelse, der var kendetegnet ved sin radikale politik og sociale kritik. Den blev kendt for sin r&aring; energi, simple musikstrukturer og fjendtlige facade, som satte sig op imod etablerede normer.</span></p>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Punk_Red_Mohawk_Morecambe_2003.jpeg" alt="Punk Red Mohawk Morecambe 2003">
+		<h3><strong>Mere end Musik</strong></h3>
+		<p><span style="font-weight: 400;">Punk rock handlede ikke kun om musikken &ndash; det var ogs&aring; en ideologi og &aelig;stetik. Punk repr&aelig;senterede en holdning, en afvisning af konformitet og det etablerede samfund. Denne kulturelle bev&aelig;gelse var t&aelig;t forbundet med en f&oslash;lelse af rebelskhed og &oslash;nsket om anarki.</span></p>
+		<h3><strong>Den Fjendtlige Facade</strong></h3>
+		<p><span style="font-weight: 400;">Punkbandenes visuelle udtryk var lige s&aring; vigtigt som deres musik. Punkernes stil var konfronterende og provokerende, hvilket bidrog til deres image som outsidere og rebeller. Den fjendtlige facade symboliserede deres distance til mainstreamkulturen.</span></p>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/2/26/PunkLondon01_ST_02.jpg" alt="Punkers i London">
+		<h3><strong>Punks Ambassad&oslash;rer i USA</strong></h3>
+		<p><span style="font-weight: 400;">I USA var bands som </span><strong>Iggy and the Stooges</strong><span style="font-weight: 400;">, </span><strong>MC5</strong><span style="font-weight: 400;">, og </span><strong>New York Dolls</strong><span style="font-weight: 400;"> pionerer inden for punkens lyd og attitude. Deres vilde energi og anti-etablerede budskaber satte scenen for punkbev&aelig;gelsen i Amerika.</span></p>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Iggy_and_The_Stooges_-_4573056572.jpg" alt="Iggy and the Stooges">
+		<h3><strong>The Ramones: Punkens Blueprint</strong></h3>
+		<p><strong>The Ramones</strong><span style="font-weight: 400;"> blev set som den bl&aring;tryksmodel, som mange punkbands efterf&oslash;lgende fulgte. Deres simple, hurtige sange og ikoniske stil gjorde dem til punkens standardb&aelig;rere i USA, og de blev et symbol p&aring; den tidlige punkrockbev&aelig;gelse.</span></p>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Primer_festival_Punk_de_Chile.jpg" alt="Primer festival Punk de Chile">
+		<h3><strong>UK: Sex Pistols og Den N&aelig;ste B&oslash;lge</strong></h3>
+		<p><span style="font-weight: 400;">I Storbritannien bragte </span><strong>Sex Pistols</strong><span style="font-weight: 400;"> punk til et nyt niveau. De skabte ikke kun en musikstil, men ogs&aring; en hel subkultur med deres vilde musik og provokerende t&oslash;jstil. De hjalp med at etablere punk som en distinkt stil og et kulturelt f&aelig;nomen i Storbritannien og internationalt.</span></p>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Sid_Vicious.jpg" alt="Sid Vicious, Sex Pistols forsanger">
+		<h3><strong>Social Kritik og Musikindustrien</strong></h3>
+		<p><span style="font-weight: 400;">Punkmusikere var kendt for deres socialt bevidste tekster, som rettede kritik mod samfundets magtstrukturer og musikindustrien. Deres musik handlede ofte om at v&aelig;re udenfor og imod det etablerede, hvilket resonerede med en generation, der f&oslash;lte sig fremmedgjort.</span></p>
+		<h3><strong>Punkens Fald og Dagens Perspektiv (2024)</strong></h3>
+		<p><span style="font-weight: 400;">I slutningen af 1970'erne begyndte punkbev&aelig;gelsen at miste momentum, da discoens glitrende, dansable musik overtog mainstreamscenen. Punkens r&aring;, aggressive energi stod i skarp kontrast til discoens glamour og hedonistiske kultur, hvilket gradvist skubbede punk l&aelig;ngere ud p&aring; kanten af popul&aelig;rkulturen. Mens punkens opr&oslash;r mod samfundsnormer var markant, var den mindre kommercielt b&aelig;redygtig i forhold til den brede appel, disco hurtigt fik.</span></p>
+		<p><span style="font-weight: 400;">I dag, i 2024, ses punk mere som en kulturel milep&aelig;l end en dominerende musikgenre. Selvom den oprindelige punk&aelig;ra er forbi, lever dens arv videre. Punk har p&aring;virket mange moderne musikstilarter, herunder alternative rock, hardcore og pop-punk. Derudover er punkens etos af g&oslash;r-det-selv (DIY), anti-establishment og individualisme stadig tydelig i b&aring;de musikken og moden i nichekulturer.</span></p>
+		<p><span style="font-weight: 400;">P&aring; trods af at punk ikke l&aelig;ngere er en mainstream kraft, er dens &aring;nd stadig intakt i undergrunden, og dens budskaber om opr&oslash;r, social kritik og autentisk selvudfoldelse inspirerer stadig nye generationer.</span></p>
 	</article>
 </MainLayout>
+
+<script type="application/ld+json" set:html={JSON.stringify(schemamarkup)}/>
